@@ -1,0 +1,24 @@
+{
+  "name": "newcat",
+  "version": "1.0.0",
+  "description": "快速创建Tomcat容器,无需联网,开箱即用!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["tomcat", "command-line-tool"],
+  "author": "AJLoveChina",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "unzip": "^0.1.11"
+  },
+  "bin": {
+    "tomcat": "./bin/bin.js",
+    "newcat": "./bin/bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AJLoveChina/newcat.git"
+  }
+}
