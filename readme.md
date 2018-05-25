@@ -21,11 +21,4 @@ $ newcat
 ```
 
 ## 示例
-第一次执行\
-![ScreenShot](https://raw.github.com/AJLoveChina/cosync/master/test/cosync.gif?t=2018年5月11日)
-
-到腾讯云查看执行结果\
-![ScreenShot](https://raw.github.com/AJLoveChina/cosync/master/test/result.gif?t=2018年5月11日)
-
-重复执行能看到已经保存的配置, 不需要重新填写配置, 但是你仍然可以修改某个配置项\
-![ScreenShot](https://raw.github.com/AJLoveChina/cosync/master/test/cosync_reexe.gif?t=2018年5月11日)
+![ScreenShot](https://raw.github.com/AJLoveChina/newcat/master/newcat.gif?t=2018年5月25日)
