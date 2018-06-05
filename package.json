@@ -1,6 +1,6 @@
 {
   "name": "newcat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "快速创建Tomcat容器,无需联网,开箱即用!",
   "main": "index.js",
   "scripts": {

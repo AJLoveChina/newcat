@@ -3,6 +3,7 @@ const config = require("../data/config.js");
 const fs = require("fs");
 const path = require("path");
 const unzip = require("unzip");
+let osVersion = require('os').arch();
 
 module.exports = {
     replaceServerXML(params) {
@@ -23,7 +24,13 @@ module.exports = {
     },
     unzip(params) {
         let tomcatFileName = config.versionList.filter(item => item.k === params.version)[0].v;
-        let tomcatPath = path.resolve(__dirname, "../../zip", tomcatFileName);
+        let tomcatPath;
+        if (osVersion === "x64") {
+            tomcatPath = path.resolve(__dirname, "../../zip/64", tomcatFileName);
+        } else {
+            tomcatPath = path.resolve(__dirname, "../../zip/32", tomcatFileName);
+        }
+
         let resultPath = path.resolve(params.cwd, `${tomcatFileName}-${params.http}`);
 
         return new Promise((s, r) => {
